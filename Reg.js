@@ -1,68 +1,3 @@
-// let form = document.getElementById('form');
-// let userName = document.getElementById('userName');
-// userName.onkeydown = function(event){
-//     let name = event.key; 
-//     let keyCode = name.charCodeAt(0);
-//     console.log(keyCode);
-
-//     if((keyCode == 32 ) || (keyCode >=65 && keyCode <=90)(keyCode >=97 && keyCode <=122))
-//     {
-        
-//     }
-//     else{
-//         event.preventDefault();
-//     }
-// }
-// let passWord = document.getElementById('passWord');
-// passWord.onkeydown = function(event){
-//     let name = event.key; 
-//     let keyCode = name.charCodeAt(0);
-//     console.log(keyCode);
-
-//     if((keyCode == 32 ) || (keyCode==66)||(keyCode >=48 && keyCode <=57))
-//     {
-        
-//     }
-//     else{
-//         event.preventDefault();
-//     }
-// }
-
-// form.addEventListener('submit', e=>{
-//     e.preventDefault();
-//     checkInput();
-    
-// });
-
-// function checkInput(){
-//     let userNamevalue = userName.value.trim();
-//     let passWordvalue = passWord.value.trim();
-    
-//     if(userNamevalue === ''){
-//         setError(userName,'userName Cannot be blank');
-//     }
-//     else{
-//         setSuccess(userName);
-//     }
-//     if(passWordvalue === ''){
-//         setError(passWord,'passWord canote be blank');
-//     }
-//     else{
-//         setSuccess(passWordvalue);
-//     }
-
-//     function setError(input,message){
-//         let formcontrol = input.parentElement;
-//         let small = formcontrol.querySelector('small');
-//         formcontrol.className = 'form-control error ';
-//         small.innerText = message;
-//     }
-
-//     function setSuccess(input){
-//         let formcontrol = input.parentElement;
-//         formcontrol.className = 'form-control success';
-//     }
-// } 
 
 const form = document.getElementById('form');
 const username = document.getElementById('username');
@@ -135,13 +70,6 @@ const validateInputs = () => {
     } else {
         setSuccess(password2);
     }
-    // if (usernameValue !== "" && passwordValue!== "" && password2Value !== "" && passwordValue === password2Value) {
-    //     function auth(){    
-    //     window.location.assign = "second.html";
-    //     }
-    //   } else {
-    //     alert("Please enter valid username and password!");
-    //   }
     if (usernameValue !== "" && passwordValue!== "" && password2Value !== "" && passwordValue === password2Value){
         form.addEventListener('submit', e => {
             e.preventDefault();
